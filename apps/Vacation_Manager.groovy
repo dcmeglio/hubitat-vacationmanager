@@ -117,7 +117,7 @@ def initialize() {
 }
 
 def hsmStatusHandler(evt) {
-	if (hsmModesList.contains(evt.value))
+	if (hsmModesList?.contains(evt.value))
 		startVacationManager()
 	else
 		stopVacationManager()
